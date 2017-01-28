@@ -3,35 +3,19 @@
 ---
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Home - UChile Robotics</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="static/css/clean-blog.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
+<!-- head -->
+{% include head.html title="Home - UChile Robotics" %}
+<style>
+    #home-team-button-bender:hover {
+        background-color: orangered;
+    }
+    #home-team-button-nao:hover {
+        background-color: deepskyblue;
+    }
+    #home-team-button-pepper:hover {
+        background-color: limegreen;
+    }
+</style>
 
 <body>
 
@@ -39,21 +23,7 @@
     {% include navigation.html %}
 
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('static/img/team2016_bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>UChile Robotics</h1>
-                        <hr class="small">
-                        <span class="subheading">Making great robots for science at University of Chile since 1997</span>
-                        <span><i class="fa fa-child fa-stack-1x fa-inverse"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    {% include header_img.html image="static/img/index-bg.jpg" title="UChile Robotics" subtitle="Making great robots for science at University of Chile since 1997" meta="<i class=\"fa fa-child fa-stack-1x fa-inverse\"></i>" %}
 
     <!-- Main Content -->
     <div class="container">
@@ -100,16 +70,16 @@
                 <h3 style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Our Robots</h3>
             </div>
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="static/img/bender-thumbnail.jpg" alt="" style="max-height: 300px; max-width: 300px; margin: 0 auto">
+                <img class="img-circle img-responsive img-center" src="static/img/bender/thumbnail.jpg" alt="" style="max-height: 300px; max-width: 300px; margin: 0 auto">
                 <h2>Bender</h2>
                 <p>Bender is a humanoid robot designed for human-robot interaction at home-like environments. He uses his computer vision, manipulation and navigation capabilities to help at home and solve a wide set of tasks.</p>
                 <p>It is developed by the UChile Homebreakers Team since 2007. he usually participates in the international robotics competition Robocup. He has reach the 5th place among 24 teams.</p>
                 <p>
-                    <a id="home-team-button-bender" class="btn btn-default btn-lg" href="bender.html">UChile Homebreakers &raquo;</a>
+                    <a id="home-team-button-bender" class="btn btn-default btn-lg" href="bender-index.html">UChile Homebreakers &raquo;</a>
                 </p>
             </div>
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="static/img/nao-thumbnail.jpg" alt="" style="max-height: 300px; max-width: 300px; margin: 0 auto">
+                <img class="img-circle img-responsive img-center" src="static/img/nao/thumbnail.jpg" alt="" style="max-height: 300px; max-width: 300px; margin: 0 auto">
                 <h2>Nao Team</h2>
                 <p>The SPL team has been the fourth best team in the league by three years in a row. It is formed by about 15 people pursuing bachelor, masters and doctorate programs in electrical engineering and computer science.</p>
                 <p>Research developed by the team is related to perception, localization, decision making and multi-robot systems with resources-constrained platforms in highly dynamic environments.</p>
@@ -118,28 +88,17 @@
                 </p>
             </div>
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="static/img/pepper-thumbnail.jpg" alt="" style="max-height: 300px; max-width: 300px; margin: 0 auto">
+                <img class="img-circle img-responsive img-center" src="static/img/pepper/thumbnail.jpg" alt="" style="max-height: 300px; max-width: 300px; margin: 0 auto">
                 <h2>Pepper</h2>
                 <p>Pepper is the last robot to join our family. The team focuses on human-robot interaction for home environments.</p>
                 <p>The team is currently working hard on him for the upcoming Robocup competition.</p>
                 <p>
-                    <a id="home-team-button-pepper" class="btn btn-default btn-lg" href="publications.html">Pepper Team &raquo;</a>
+                    <a id="home-team-button-pepper" class="btn btn-default btn-lg" href="pepper-index.html">Pepper Team &raquo;</a>
                 </p>
             </div>
         </div>
         <!-- /.row -->
     </div>
-    <style>
-        #home-team-button-bender:hover {
-            background-color: orangered;
-        }
-        #home-team-button-nao:hover {
-            background-color: deepskyblue;
-        }
-        #home-team-button-pepper:hover {
-            background-color: limegreen;
-        }
-    </style>
 
     <hr>
 
@@ -151,22 +110,22 @@
         </div>
         <div class="col-md-3 col-sm-6">
             <a href="http://www.amtc.cl/">
-                <img class="img-rounded img-responsive img-center" src="static/img/AMTC-01.png" alt="" style="max-height: 150px; margin: 0 auto;">
+                <img class="img-rounded img-responsive img-center" src="static/img/sponsors-amtc.png" alt="" style="max-height: 150px; margin: 0 auto;">
             </a>
         </div>
         <div class="col-md-3 col-sm-6">
             <a href="http://ingenieria.uchile.cl/">
-                <img class="img-rounded img-responsive img-center" src="static/img/fcfm_vertical.png" alt="" style="max-height: 150px; margin: 0 auto;">
+                <img class="img-rounded img-responsive img-center" src="static/img/sponsors-fcfm.png" alt="" style="max-height: 150px; margin: 0 auto;">
             </a>
         </div>
         <div class="col-md-3 col-sm-6">
             <a href="http://www.uchile.cl/">
-                <img class="img-rounded img-responsive img-center" src="static/img/logo_escudo_png.png" alt="" style="max-height: 150px; margin: 0 auto;">
+                <img class="img-rounded img-responsive img-center" src="static/img/sponsors-uchile.png" alt="" style="max-height: 150px; margin: 0 auto;">
             </a>
         </div>
         <div class="col-md-3 col-sm-6">
             <a href="http://www.explora.cl/">
-                <img class="img-rounded img-responsive img-center" src="static/img/Logoconicytgrande.png" alt="" style="max-height: 150px; margin: 0 auto;">
+                <img class="img-rounded img-responsive img-center" src="static/img/sponsors-conicit.png" alt="" style="max-height: 150px; margin: 0 auto;">
             </a>
         </div>
     </div>
@@ -177,18 +136,8 @@
     <!-- Footer -->
     {% include footer.html %}
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="static/js/jqBootstrapValidation.js"></script>
-    <script src="static/js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="static/js/clean-blog.min.js"></script>
+    <!-- bottom imports -->
+    {% include bottom.html %}
 
 </body>
 
