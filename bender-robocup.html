@@ -12,22 +12,12 @@
     {% include navigation.html %}
 
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('static/img/bender/robocup-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1>Robocup</h1>
-                        <h2 class="subheading">UChile Homebreakers</h2>
-                        <!--<span class="meta">Bender Robot developers</span>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    {% include header_img.html image="static/img/bender/robocup-bg.jpg" title="Robocup" subtitle="" meta="UChile Homebreakers" %}
 
+    <!-- Sub Nav Bar -->
+    {% include bender-navbar.html %}
 
+    <!-- Main Content -->
     <article>
         <div class="container">
             <div class="row">
@@ -105,7 +95,6 @@
                                 <td><a href="http://bender.li2.uchile.cl/Files/TDP/UChileHomeBreakers_TDP2015.pdf"><span class="fa-stack fa-lg"><i class="fa fa-file-pdf-o fa-stack-1x"></i></span></a></td>
                                 <td><span class="fa-stack fa-lg"><i class="fa fa-minus fa-stack-1x"></i></span></td>
                                 <td><span class="fa-stack fa-lg"><i class="fa fa-minus fa-stack-1x"></i></span></td>
-                                <!--<td><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-file-pdf-o fa-stack-1x"></i></span></a></td>-->
                             </tr>
                         </tbody>
                     </table>
