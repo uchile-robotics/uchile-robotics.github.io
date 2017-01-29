@@ -6,7 +6,30 @@
 <!-- head -->
 {% include head.html title="Bender Gallery - UChile Robotics" %}
 
+<link rel="stylesheet" href="vendor/Gallery-master/css/blueimp-gallery.min.css">
+
+<style>
+#links a img {
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 150px;
+}
+</style>
+
 <body>
+
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
 
     <!-- Navigation -->
     {% include navigation.html %}
@@ -18,55 +41,200 @@
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <!-- Slider-->
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="background: transparent">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
+                <div class="col-sm-12">
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="static/img/bender/team/team2016.jpg" alt="" style="max-height: 500px; margin: 0 auto;">
-                                <!--<div class="carousel-caption">-->
-                                    <!--...-->
-                                <!--</div>-->
-                            </div>
-                            <div class="item">
-                                <img src="static/img/bender/team/team2.jpg" alt="" style="max-height: 500px; margin: 0 auto;">
-                                <!--<div class="carousel-caption">-->
-                                    <!--...-->
-                                <!--</div>-->
-                            </div>
-                            <div class="item">
-                                <img src="static/img/bender/team/team.jpg" alt="" style="max-height: 500px; margin: 0 auto;">
-                                <!--<div class="carousel-caption">-->
-                                    <!--...-->
-                                <!--</div>-->
-                            </div>
-                            <div class="item">
-                                <img src="static/img/bender/team/ptmontt.jpg" alt="" style="max-height: 500px; margin: 0 auto;">
-                                <!--<div class="carousel-caption">-->
-                                    <!--...-->
-                                <!--</div>-->
-                            </div>
+                    <h2>Robocup @HOME</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <iframe width="460" height="264" src="https://www.youtube.com/embed/8LR7KWLdYBM" frameborder="0" allowfullscreen></iframe>
+                            <blockquote>Qualification Video Robocup 2015</blockquote>
                         </div>
 
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"  style="background: transparent">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="background: transparent">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="col-sm-12 col-md-6">
+                            <iframe width="460" height="264" src="https://www.youtube.com/embed/4lE6ILFWi6w" frameborder="0" allowfullscreen></iframe>
+                            <blockquote>Qualification Video Robocup 2014</blockquote>
+                        </div>
                     </div>
 
+
+                    <h2>Bender Skills</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <iframe width="460" height="264"  src="https://www.youtube.com/embed/NEKo1SXj40s" frameborder="0" allowfullscreen></iframe>
+                            <blockquote>Bender Abilities - Facial Expression</blockquote>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <iframe width="460" height="264"  src="https://www.youtube.com/embed/vcKg9_-6Oig" frameborder="0" allowfullscreen></iframe>
+                            <blockquote>Bender Abilities - Speech Recognition</blockquote>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <iframe width="460" height="264" src="https://www.youtube.com/embed/Nob3qyA3N5I" frameborder="0" allowfullscreen></iframe>
+                            <blockquote>Bender Abilities - Follow Person</blockquote>
+                        </div>
+                    </div>
+
+                    <h2>Photos</h2>
+
+                    <div id="links">
+                        <a class="class-FE" href="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Angry.jpg" title="Facial Expression, Angry">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Angrymini.jpg" alt="Facial Expression, Angry">
+                        </a>
+                        <a class="class-FE" href="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Happy.jpg" title="Facial Expression, Happy">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Happymini.jpg" alt="Facial Expression, Happy">
+                        </a>
+                        <a class="class-FE" href="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Sad.jpg" title="Facial Expression, Sad">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Sadmini.jpg" alt="Facial Expression, Sad">
+                        </a>
+                        <a class="class-FE" href="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Surprised.jpg" title="Facial Expression, Surprised">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/FotosExpresiones/Surprisedmini.jpg" alt="Facial Expression, Surprised">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/1.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/1mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/2.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/2mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/3.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/3mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/4.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/4mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/5.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/5mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/6.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/6mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/7.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/7mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/8.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/8mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/9.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/9mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/10.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/10mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/11.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/11mini.JPG" alt="History">
+                        </a>
+                        <a class="class-HI" href="http://bender.li2.uchile.cl/images/gallery/History/12.JPG" title="History">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/History/12mini.JPG" alt="History">
+                        </a>
+                        <a class="class-R08" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3559.JPG" title="Robocup 2008, Suzhou, China">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3559mini.JPG" alt="Robocup 2008, Suzhou, China">
+                        </a>
+                        <a class="class-R08" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3485.JPG" title="Robocup 2008, Suzhou, China">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3485mini.JPG" alt="Robocup 2008, Suzhou, China">
+                        </a>
+                        <a class="class-R08" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3480.JPG" title="Robocup 2008, Suzhou, China">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3480mini.JPG" alt="Robocup 2008, Suzhou, China">
+                        </a>
+                        <a class="class-R08" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3491.JPG" title="Robocup 2008, Suzhou, China">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3491mini.JPG" alt="Robocup 2008, Suzhou, China">
+                        </a>
+                        <a class="class-R08" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3616.JPG" title="Robocup 2008, Suzhou, China">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3616mini.JPG" alt="Robocup 2008, Suzhou, China">
+                        </a>
+                        <a class="class-R08" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3473.JPG" title="Robocup 2008, Suzhou, China">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2008/IMGP3473mini.JPG" alt="Robocup 2008, Suzhou, China">
+                        </a>
+                        <a class="class-R07" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta0.jpg" title="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta0mini.jpg" alt="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                        </a>
+                        <a class="class-R07" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta1.jpg" title="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta1mini.jpg" alt="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                        </a>
+                        <a class="class-R07" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta2.jpg" title="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta2mini.jpg" alt="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                        </a>
+                        <a class="class-R07" href="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta3.jpg" title="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/RoboCup2007/Atlanta3mini.jpg" alt="Robocup 2007, Georgia Tech, Atlanta, EEUU">
+                        </a>
+                        <a class="class-SW09" href="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301270.JPG" title="Science Week 2009, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301270mini.JPG" alt="Science Week 2009, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW09" href="http://bender.li2.uchile.cl/images/gallery/SC2009/DSC01190.JPG" title="Science Week 2009, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2009/DSC01190mini.JPG" alt="Science Week 2009, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW09" href="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301265.JPG" title="Science Week 2009, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301265mini.JPG" alt="Science Week 2009, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW09" href="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301272.JPG" title="Science Week 2009, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301272mini.JPG" alt="Science Week 2009, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW09" href="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301264.JPG" title="Science Week 2009, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301264mini.JPG" alt="Science Week 2009, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW09" href="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301300.JPG" title="Science Week 2009, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2009/S6301300mini.JPG" alt="Science Week 2009, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0136.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0136mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0132.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0132mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0141.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0141mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0145.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0145mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0150.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0150mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/S6300684.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/S6300684mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0171.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/DSC_0171mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-SW08" href="http://bender.li2.uchile.cl/images/gallery/SC2008/S6300730.JPG" title="Science Week 2008, Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/SC2008/S6300730mini.JPG" alt="Science Week 2008, Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/image001.jpg" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/image001mini.jpg" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/image003.jpg" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/image003mini.jpg" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/image008.jpg" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/image008mini.jpg" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/image013.jpg" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/image013mini.jpg" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/image021.jpg" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/image021mini.jpg" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/image032.jpg" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/image032mini.jpg" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/image108.jpg" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/image108mini.jpg" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7066.JPG" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7066mini.JPG" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7078.JPG" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7078mini.JPG" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7092.JPG" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7092mini.JPG" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7109.JPG" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7109mini.JPG" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                        <a class="class-HR" href="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7149.JPG" title="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                            <img src="http://bender.li2.uchile.cl/images/gallery/Colegios/IMG_7149mini.JPG" alt="Bender with Children (Human-Robot Interaction), Santiago, Chile.">
+                        </a>
+                    </div>
 
                 </div>
             </div>
@@ -81,5 +249,17 @@
     <!-- bottom imports -->
     {% include bottom.html %}
 
+    <script src="vendor/Gallery-master/js/blueimp-gallery.min.js"></script>
+
+    <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+    </script>
 </body>
 </html>
