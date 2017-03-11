@@ -3,3 +3,7 @@
     background-color: transparent;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.navbar-custom.is-fixed .nav .dropdown-menu li a {
+  color: #fff;
+}
