@@ -10,3 +10,7 @@
 .navbar-custom.is-fixed .nav .dropdown-menu li a {
   color: #fff;
 }
+
+header.intro-header .page-heading h1 {
+	font-size: 60px;
+}
