@@ -31,3 +31,12 @@ bundle exec jekyll serve
 bundle exec jekyll build
 
 copiar/pegar archivos de _site en carpeta de pagina
+
+# Troubleshooting
+
+jekyll 3.3.1 | Error:  Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes.
+```
+gem install execjs
+sudo apt-get install nodejs
+
+```
