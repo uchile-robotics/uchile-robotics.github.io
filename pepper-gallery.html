@@ -16,6 +16,13 @@
     min-width: 150px;
     cursor: zoom-in;
 }
+#pepper_images a img {
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 150px;
+    cursor: zoom-in;
+}
 </style>
 
 <body>
@@ -78,10 +85,6 @@
                         <a class="class-FE" href="static/img/RoboCup2017/pepper_poster.JPG" title="UChile Peppers Poster">
                             <img src="static/img/RoboCup2017/pepper_poster.JPG" alt="UChile Peppers Poster">
                         </a>
-
-                        <a class="class-FE" href="static/img/RoboCup2017/peppers.JPG" title="Peppers">
-                            <img src="static/img/RoboCup2017/peppers.JPG" alt="Peppers">
-                        </a>
   
                         <a class="class-FE" href="static/img/RoboCup2017/pepper_spr.JPG" title="SPR Test">
                             <img src="static/img/RoboCup2017/pepper_spr.JPG" alt="SPR Test">
@@ -98,7 +101,7 @@
                             <blockquote>Maqui in Science Fair II</blockquote>
                         </div>
                     </div> 
-                    <div id="links">
+                    <div id="pepper_images">
                         <a class="class-FE" href="static/img/pepper_outreach/amazing_pepper.JPG" title="Amazing Pepper">
                             <img src="static/img/pepper_outreach/amazing_pepper.JPG" alt="Amazing Pepper">
                         </a>
@@ -150,6 +153,14 @@
 
     <script>
         document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+        document.getElementById('pepper_images').onclick = function (event) {
             event = event || window.event;
             var target = event.target || event.srcElement,
                 link = target.src ? target.parentNode : target,
