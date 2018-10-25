@@ -34,7 +34,7 @@
 
                         <div class="col-sm-4">
                             <div class="view view_first">
-                                <img src="http://bender.li2.uchile.cl/images/team/javier_ruiz_del_solar.jpg" alt=""/>
+                                <img src="static/img/bender/people/javier_ruiz_del_solar.jpg" alt=""/>
                                 <div class="mask">
                                     <h2>Javier Ruiz del Solar</h2>
                                     <p><b>Team Supervisor</b><br>
@@ -63,18 +63,6 @@
                         </div>
 
                         
-                        <div class="col-sm-4">
-                            <div class="view view_first">
-                                <img src="static/img/bender/people/Rodrigo_Munoz.png" alt=""/>
-                                <div class="mask">
-                                    <h2>Rodrigo Muñoz</h2>
-                                    <p> E.E. Student<br>
-                                        Hardware Technician  </p>
-                                    <!--<a href="" class="btn">Curriculum</a>-->
-                                </div>
-                            </div>
-                            <blockquote> Rodrigo Muñoz <br>Hardware Technical Leader</blockquote>
-                        </div>
 
                         <div class="col-sm-4">
                             <div class="view view_first">
@@ -93,24 +81,39 @@
                                 <img src="static/img/bender/people/JoseAstorga.png" alt=""/>
                                 <div class="mask">
                                     <h2>José Astorga</h2>
-                                    <p> E.E. Student </p>
+                                    <p> C.S. Student </p>
                                     <!--<a href="" class="btn">Curriculum</a>-->
                                 </div>
                             </div>
                             <blockquote> José Astorga <br>Team Member</blockquote>
                         </div>
+
+
+                        <div class="col-sm-4">
+                            <div class="view view_first">
+                                <img src="static/img/bender/people/NicolasMarticorena.jpg" alt=""/>
+                                <div class="mask">
+                                    <h2>Nicolás Marticorena</h2>
+                                    <p> E.E. Student
+                                    </p>
+                                    <!--<a href="" class="btn">Curriculum</a>-->
+                                </div>
+                            </div>
+                            <blockquote> Nicolás Marticorena <br>Team Member</blockquote>
+                        </div>
+
                         <div class="col-sm-4">
                             <div class="view view_first">
                                 <img src="static/img/bender/people/rsalas.JPG" alt=""/>
                                 <div class="mask">
                                     <h2>Rodrigo Salas</h2>
-                                    <p> E. Student </p>
+                                    <p> E.E. Student </p>
                                     <!--<a href="" class="btn">Curriculum</a>-->
                                 </div>
                             </div>
                             <blockquote> Rodrigo Salas <br>Team Member</blockquote>
                         </div>
-                        <div class="col-sm-4">
+<!--                         <div class="col-sm-4">
                             <div class="view view_first">
                                 <img src="static/img/bender/people/EnmanuelAlmonte.jpg" alt=""/>
                                 <div class="mask">
@@ -118,12 +121,12 @@
                                     <p> Visiting Researcher <br>
                                         Fulbright Scholar
                                     </p>
-                                    <!--<a href="" class="btn">Curriculum</a>-->
-                                </div>
+ -->                                    <!--<a href="" class="btn">Curriculum</a>-->
+<!--                                 </div>
                             </div>
                             <blockquote> Enmanuel Almonte <br>Team Member</blockquote>
                         </div>
-
+ -->
                         <div class="col-sm-4">
                             <div class="view view_first">
                                 <img src="static/img/bender/people/plocomilla.jpg" alt=""/>
@@ -140,12 +143,15 @@
                     </div>
 
                     <br>
-                    <br>
                     <hr>
                     <br>
-                    <h2 class="section-heading">Past Members</h2>
+                    <h2 class="section-heading">Former Members</h2>
+                    <br>
+                    <br>
                           
                         <!-- PAST MEMBERS -->
+                        {% include old_member.html name="Enmanuel Almonte" image="static/img/bender/people/EnmanuelAlmonte.jpg" info="Visiting Researcher <br>
+                                        Fulbright Scholar." %}
                         {% include old_member.html name="Diego Baño" image="static/img/bender/people/diego2.jpg" info="." %}
                     
                     </div>
