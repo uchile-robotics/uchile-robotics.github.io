@@ -11,6 +11,9 @@
   color: #fff;
 }
 
+.container p{
+    text-align: justify
+}
 header.intro-header .page-heading h1 {
-	font-size: 60px;
+    font-size: 60px;
 }
