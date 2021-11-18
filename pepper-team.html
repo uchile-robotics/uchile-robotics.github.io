@@ -49,99 +49,37 @@
 
                         <div class="col-sm-4">
                             <div class="view view_first">
-                                <img src="static/img/bender/people/gpais.jpg" alt=""/>
+                                <img src="static/img/bender/people/rsalas.jpg" alt=""/>
                                 <div class="mask">
-                                    <h2>Giovanni Pais</h2>
+                                    <h2>Rodrigo Salas</h2>
                                     <p> E.E. student<p>
                                 </div>
                             </div>
-                            <blockquote> Giovanni Pais<br>Team Leader</blockquote>
+                            <blockquote> Rodrigo Salas<br>Team Leader</blockquote>
                         </div>
 
                         <div class="col-sm-4">
                             <div class="view view_first">
-                                <img src="static/img/bender/people/cgomez.jpg" alt=""/>
+                                <img src="static/img/bender/people/placeholder.jpg" alt=""/>
                                 <div class="mask">
-                                    <h2>Cristopher Gomez</h2>
+                                    <h2>Juan Pablo Cáceres</h2>
+                                    <p> E.E. Student </p>
+                                    <!--<a href="" class="btn">Curriculum</a>-->
+                                </div>
+                            </div>
+                            <blockquote> Juan Pablo Cáceres <br>Team Member</blockquote>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="view view_first">
+                                <img src="static/img/bender/people/placeholder.jpg" alt=""/>
+                                <div class="mask">
+                                    <h2>Eduardo Loayza</h2>
                                     <p> M.E. Student </p>
                                     <!--<a href="" class="btn">Curriculum</a>-->
                                 </div>
                             </div>
-                            <blockquote> Cristopher Gomez<br>Team Member</blockquote>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="view view_first">
-                                <img src="static/img/bender/people/lpavez2.jpg" alt=""/>
-                                <div class="mask">
-                                    <h2>Lukas Pavez</h2>
-                                    <p> C.S. Student </p>
-                                    <!--<a href="" class="btn">Curriculum</a>-->
-                                </div>
-                            </div>
-                            <blockquote> Lukas Pavez<br>Team Member</blockquote>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="view view_first">
-                                <img src="static/img/bender/people/nmarticorena.jpg" alt=""/>
-                                <div class="mask">
-                                    <h2>Nicolás Marticorena</h2>
-                                    <p> E.E. Student
-                                    </p>
-                                    <!--<a href="" class="btn">Curriculum</a>-->
-                                </div>
-                            </div>
-                            <blockquote> Nicolás Marticorena <br>Team Member</blockquote>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="view view_first">
-                                <img src="static/img/bender/people/rsalas.jpg" alt=""/>
-                                <div class="mask">
-                                    <h2>Rodrigo Salas</h2>
-                                    <p> E.E. Student </p>
-                                    <!--<a href="" class="btn">Curriculum</a>-->
-                                </div>
-                            </div>
-                            <blockquote> Rodrigo Salas <br>Team Member</blockquote>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="view view_first">
-                                <img src="static/img/bender/people/hstarke.jpg" alt=""/>
-                                <div class="mask">
-                                    <h2>Hans Starke</h2>
-                                    <p> E.E. Student
-                                    </p>
-                                    <!--<a href="" class="btn">Curriculum</a>-->
-                                </div>
-                            </div>
-                            <blockquote> Hans Starke <br>Team Member</blockquote>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="view view_first">
-                                <img src="static/img/bender/people/cramirez.jpg" alt=""/>
-                                <div class="mask">
-                                    <h2>  Camilo Ramirez </h2>
-                                    <p> E.E. Student </p>
-                                </div>
-                            </div>
-                            <blockquote> Camilo Ramirez <br> Team Member </blockquote>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="view view_first">
-                                <img src="static/img/bender/people/plocomilla.jpg" alt=""/>
-                                <div class="mask">
-                                    <h2>Patricio Loncomilla</h2>
-                                    <p>  E.E. MSc. Ph.D. <br> <br>
-                                        Advisor </p>
-                                    <a href="http://bender.li2.uchile.cl/Files/CV/CV_Basal_PatricioLoncomilla.v2.pdf" class="btn" target="_blank">Curriculum</a>
-                                </div>
-                            </div>
-                            <blockquote> Patricio Loncomilla<br>Advisor</blockquote>
+                            <blockquote> Eduardo Loayza <br>Team Member</blockquote>
                         </div>
                         
                     </div>
@@ -154,6 +92,13 @@
                     <br>
                           
                         <!-- PAST MEMBERS -->
+                        {% include old_member.html name="Giovanni Pais" image="static/img/bender/people/gpais.jpg" info="." %}
+                        {% include old_member.html name="Cristopher Gomez" image="static/img/bender/people/cgomez.jpg" info="." %}
+                        {% include old_member.html name="Lukas Pavez" image="static/img/bender/people/lpavez2.jpg" info="." %}
+                        {% include old_member.html name="Nicolás Marticorena" image="static/img/bender/people/nmarticorena.jpg" info="." %}
+                        {% include old_member.html name="Hans Starke" image="static/img/bender/people/hstarke.jpg" info="." %}
+                        {% include old_member.html name="Camilo Ramirez" image="static/img/bender/people/cramirez.jpg" info="." %}
+                        {% include old_member.html name="Patricio Loncomilla" image="static/img/bender/people/nmarticorena.jpg" info="Advisor" %}
                         {% include old_member.html name="Enmanuel Almonte" image="static/img/bender/people/ealmonte.jpg" info="Visiting Researcher <br>
                                         Fulbright Scholar." %}
                         {% include old_member.html name="Diego Baño" image="static/img/bender/people/dbaño.jpg" info="." %}
