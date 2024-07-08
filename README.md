@@ -49,3 +49,9 @@ Notar que el servidor oficial además puede contener otros directorios con archi
 ## Consideraciones IMPORTANTES
 
 - Evitar a toda costa subir archivos que no sean código a la página web: imágenes, video, pdfs, etc. Especialmente si éstos pesan más de 1MB. Los archivos son hosteados en el servidor oficial y deben ser subidos manualmente mediante FTP.
+
+## TODO
+- Upload team pictures
+- Bender Page
+- Pepper page
+- Jaime page
